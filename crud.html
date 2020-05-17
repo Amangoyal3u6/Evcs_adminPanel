@@ -385,7 +385,9 @@
                                                                       <div class="form-group">
                                                                         <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                                                                       </div>
-                                                                      
+                                                                      <div class="form-group">
+                                                                        <input type="text" class="form-control form-control-user" id="admintype" disabled="true" value="Sub-Admin">
+                                                                      </div>
                                                                       <a href="#" class="btn btn-danger btn-user btn-block">
                                                                         Create
                                                                       </a> 
@@ -397,13 +399,111 @@
                                                                 </div>
                                                                 
                                                               </div>
-                                                            </div>    
+                                                            </div>
+                                                            <!-- End Create Modal -->    
                                                         <button
-                                                            class="list-group-item bg-info text-white p-3 mb-1 text-center rounded">Show
-                                                            all Sub-Admins</button>
-                                                        <button
-                                                            class="list-group-item bg-danger text-white p-3 mb-1 text-center rounded">Remove
-                                                            Sub-Admin</button>
+                                                            class="list-group-item bg-info text-white p-3 mb-1 text-center rounded" data-toggle="modal" data-target="#showsubAd">Show all Sub-Admins</button>
+                                                        
+                                                        <!-- Edit Modal -->
+                                                            
+                                                        <div id="editsubAd" class="modal fade" role="dialog">
+                                                            <div class="modal-dialog">
+
+                                                              <!-- Modal content-->
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h4 class="modal-title">Edit Sud-Admin Details</h4>
+                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                  <p>
+                                                                    
+                                                                  </p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                              </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Edit Modal-->
+
+
+                                                        <!-- Delete Modal-->
+                                                        
+                                                        <div id="deletesubAd" class="modal fade" role="dialog">
+                                                            <div class="modal-dialog">
+
+                                                              <!-- Modal content-->
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h4 class="modal-title">Delete Sud-Admin Details</h4>
+                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                  <p></p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                              </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Delete Modal-->
+
+                                                        <!-- Details Show -->
+                                                        <div class="modal fade" id="showsubAd" role="dialog">
+                                                            <div class="modal-dialog modal-lg">
+                                                              <!-- Modal content-->
+                                                              <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                  <h4 class="modal-title">Sub-Admin Details</h4>
+                                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>                                                           
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                  <div class="container">
+                                                                    <div class="table-responsive">
+                                                                      <table class="table table-striped table-hover">
+                                                                        <thead>
+                                                                          <tr>
+                                                                            <th>#</th>
+                                                                            <th>Name</th>
+                                                                            <th>Email</th>
+                                                                            <th>Mobile Number</th>
+                                                                            <th>Username</th>
+                                                                            <th>Password</th>
+                                                                            <th>Actions</th>
+                                                                          </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                          <tr>
+                                                                            <td>1</td>
+                                                                            <td>Aman Goyal</td>
+                                                                            <td>Abcxyzpqrst@yahoo.com</td>
+                                                                            <td>8000800028</td>
+                                                                            <td>aman17goyal</td>
+                                                                            <td>123456</td>
+                                                                            <td>
+                                                                                <a href="#editsubAd" class="edit" data-toggle="modal"><i class="fas fa-pencil-alt"></i></a>
+                                                                                <a href="#deletesubAd" class="delete" data-toggle="modal"><i class="fas fa-trash-alt"></i></a>
+                                                                            </td>
+                                                                          </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                              </div> 
+                                                            </div>
+                                                          </div>
+
+                                                          <!--End details Modal -->
+                                                        
                                                     </ul>
                                                 </div>
                                             </div>
