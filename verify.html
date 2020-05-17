@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>CRUD</title>
+        <title>Verify</title>
 
         <!-- Custom fonts for this template-->
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -54,7 +54,7 @@
 
 
                 <!-- Nav Item - Utilities Collapse Menu -->
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="verify.html">
                         <i class="fas fa-user-check"></i>
                         <span>Verify</span>
@@ -70,7 +70,7 @@
                 </div>
 
                 <!-- Nav Item - CRUD -->
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="crud.html">
                         <i class="fas fa-users-cog"></i>
                         <span>CRUD</span>
@@ -336,141 +336,7 @@
                     <div class="container">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-4 text-gray-800 text-center">CRUD</h1>
-
-                        <div class="accordion" id="accordionAdmin">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-4">
-
-                                        <!-- Sub Admins -->
-                                        <div class="card shadow mb-4">
-                                            <div class="card-header mx-auto w-100" id="headingSub">
-                                                <a class="btn btn-secondary w-100" data-toggle="collapse" href="#collapseSub"
-                                                    role="button" aria-expanded="false" aria-controls="collapseSub">
-                                                    Sub Admin
-                                                </a>
-                                            </div>
-                                            <div class="card-body collapse" id="collapseSub" aria-labelledby="headingSub"
-                                                data-parent="#accordionAdmin">
-                                                <div class="mx-auto" style="width: 100%;">
-                                                    <ul class="list-group list-group-flush ">
-                                                        <button
-                                                            class="list-group-item bg-primary text-white p-3 mb-1 text-center rounded" data-toggle="modal" data-target="#create">Create
-                                                            a Sub-Admin</button>
-                                                            <!-- Create Modal -->
-                                                            <div class="modal fade" id="create" role="dialog">
-                                                              <div class="modal-dialog">
-                                                              
-                                                                <!-- Modal content-->
-                                                                <div class="modal-content">
-                                                                  <div class="modal-header">
-                                                                    <h4 class="modal-title float-left">Create Sub-Admin</h4>
-                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                  </div>
-                                                                  <div class="modal-body">
-                                                                    <form class="user">
-                                                                      <div class="form-group">
-                                                                        <input type="text" class="form-control form-control-user" id="subadminName" aria-describedby="emailHelp" placeholder="Enter Name">
-                                                                      </div>
-                                                                      <div class="form-group">
-                                                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
-                                                                      </div>
-                                                                      <div class="form-group">
-                                                                        <input type="tel" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Mobile Number">
-                                                                      </div>
-                                                                      <div class="form-group">
-                                                                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Username">
-                                                                      </div>
-                                                                      <div class="form-group">
-                                                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
-                                                                      </div>
-                                                                      
-                                                                      <a href="#" class="btn btn-danger btn-user btn-block">
-                                                                        Create
-                                                                      </a> 
-                                                                    </form>
-                                                                  </div>
-                                                                  <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                                  </div>
-                                                                </div>
-                                                                
-                                                              </div>
-                                                            </div>    
-                                                        <button
-                                                            class="list-group-item bg-info text-white p-3 mb-1 text-center rounded">Show
-                                                            all Sub-Admins</button>
-                                                        <button
-                                                            class="list-group-item bg-danger text-white p-3 mb-1 text-center rounded">Remove
-                                                            Sub-Admin</button>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="col-sm-4">
-                                        <!-- EVCS Card -->
-                                        <div class="card shadow mb-4">
-                                            <div class="card-header mx-auto w-100" id="headingEVCS">
-                                                <a class="btn btn-secondary w-100 collapsed" data-toggle="collapse" href="#EVCS"
-                                                    role="button" aria-expanded="false" aria-controls="EVCS">
-                                                    EVCS
-                                                </a>
-                                            </div>
-                                            <div class="card-body collapse" id="EVCS" aria-labelledby="headingEVCS"
-                                                data-parent="#accordionAdmin">
-                                                <div class="mx-auto" style="width: 100%;">
-                                                    <ul class="list-group list-group-flush ">
-                                                        <a href="#"
-                                                            class="list-group-item bg-primary text-white p-3 mb-1 text-center rounded">Option
-                                                            1</a>
-                                                        <a href="#"
-                                                            class="list-group-item bg-info text-white p-3 mb-1 text-center rounded">Option
-                                                            2</a>
-                                                        <a href="#"
-                                                            class="list-group-item bg-danger text-white p-3 mb-1 text-center rounded">Option
-                                                            3</a>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="col-sm-4">
-                                        <!-- Users Card -->
-                                        <div class="card shadow mb-4">
-                                            <div class="card-header mx-auto w-100" id="headingUsers">
-                                                <a class="btn btn-secondary w-100" data-toggle="collapse" href="#Users" role="button"
-                                                    aria-expanded="false" aria-controls="Users">
-                                                    Users
-                                                </a>
-                                            </div>
-                                            <div class="card-body collapse" id="Users" aria-labelledby="headingUsers"
-                                                data-parent="#accordionAdmin">
-                                                <div class="mx-auto" style="width: 100%;">
-                                                    <ul class="list-group list-group-flush ">
-                                                        <a href="#"
-                                                            class="list-group-item bg-primary text-white p-3 mb-1 text-center rounded">Option
-                                                            1</a>
-                                                        <a href="#"
-                                                            class="list-group-item bg-info text-white p-3 mb-1 text-center rounded">Option
-                                                            2</a>
-                                                        <a href="#"
-                                                            class="list-group-item bg-danger text-white p-3 mb-1 text-center rounded">Option
-                                                            3</a>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <h1>Verify Page</h1>
             <!-- /.container-fluid -->
             
         </div>
