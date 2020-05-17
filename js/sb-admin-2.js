@@ -17,6 +17,11 @@
     };
   });
 
+$('#accordionSidebar').click(function() {
+  // $('#accordionSidebar').toggle();
+  $('.sidebar .collapse').collapse('show');
+});
+
   // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
   $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
     if ($(window).width() > 768) {
@@ -46,4 +51,15 @@
     e.preventDefault();
   });
 
+/*   $(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _closed = $(".sidebar-dark").hasClass("toggled");
+        if (_closed === false && !clickover.parent(".sidebar-dark")) {
+            $("button#sidebarToggleTop").click();
+        }
+    });
+}); */
+
 })(jQuery); // End of use strict
+
