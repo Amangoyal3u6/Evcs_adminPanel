@@ -1,0 +1,5 @@
+/* Please add here your custom CSS to be applied on top of Bootstrap CSS */
+
+.modal-lg {
+    max-width: 80%;
+}
