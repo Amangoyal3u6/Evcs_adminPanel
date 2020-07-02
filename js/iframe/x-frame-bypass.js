@@ -80,3 +80,5 @@ customElements.define('x-frame-bypass', class extends HTMLIFrameElement {
 		})
 	}
 }, {extends: 'iframe'})
+
+
